@@ -1,0 +1,45 @@
+.header {
+  width: calc(100vw - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.btnLogo {
+  background-color: transparent;
+  border: none;
+  padding: 0
+}
+
+.search, .action {
+  min-width: 22vw;
+  min-height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 15px;
+  box-sizing: content-box;
+}
+
+.search {
+  background: url('../../assets/icons/magnifying.svg') no-repeat center left 13px;
+  background-color: #FFF;
+  -webkit-appearance: textfield;
+  margin: 0 25px 0 auto;
+  padding: 0 20px 0 40px;
+  min-width: calc(22vw - 60px);
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0
+}
+
+.plus {
+  margin-right: 10px
+}
+
+.action, .btnLogo {
+  cursor: pointer
+}

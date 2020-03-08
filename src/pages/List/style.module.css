@@ -1,0 +1,108 @@
+.container {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  background: linear-gradient(35deg, #FAFAFF 10%, rgba(255, 255, 255, 0) 1045%);
+  min-width: 320px;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.aside .title, .list .title {
+  padding: 5px 35px 5px;
+}
+
+.aside .title {
+  font-size: 20px;
+}
+
+.list .title {
+  font-size: 30px;
+  line-height: 6px;
+  padding: 0 45px;
+
+}
+
+.aside .content, .list .content {
+  border-top: 1px solid #D0DAE8;
+  padding: 0 40px;
+  list-style: none;
+}
+
+.aside .content .item {
+  background: url('../../assets/icons/carrot.svg') no-repeat center right;
+  border-bottom: 1px solid #D0DAE8;
+  padding: 20px 0;
+  font-style: italic;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.aside .content .item:hover {
+  font-weight: bold;
+}
+
+.list, .aside {
+  border-radius: 5px;
+}
+
+.list {
+  width: calc(100% - 345px);
+  background: linear-gradient(13deg, #FAFAFF 12%, rgba(255, 255, 255, 0) 1045%);
+}
+
+.list .content {
+  margin-right: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+/* width */
+.list .content::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+.list .content::-webkit-scrollbar-thumb {
+  background: #5452F6;
+}
+
+.list .content .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #D0DAE8;
+}
+
+.list .content .item:hover {
+  background: #e8e8e8;
+  cursor: pointer;
+}
+
+.list .content .item .catBasicInfo {
+  display: flex;
+  align-items: center;
+}
+
+.list .content .item .catPhoto {
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.list .content .item .catName {
+  font-size: 20px;
+  margin-left: 25px;
+  font-style: italic;
+}
+
+.list .content .item .catProperties {
+  font-size: 13px;
+}
+
+.list .content .item .catProperties:last-child {
+  margin-right: 100px;
+}
