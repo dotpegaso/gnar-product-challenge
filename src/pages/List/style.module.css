@@ -55,17 +55,14 @@
 }
 
 .list .content {
-  margin-right: 10px;
   overflow-y: auto;
   max-height: 80vh;
 }
 
-/* width */
 .list .content::-webkit-scrollbar {
   width: 3px;
 }
 
-/* Handle */
 .list .content::-webkit-scrollbar-thumb {
   background: #5452F6;
 }
@@ -76,6 +73,8 @@
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #D0DAE8;
+  text-decoration: none;
+  color: #111;
 }
 
 .list .content .item:hover {

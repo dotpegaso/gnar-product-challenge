@@ -18,6 +18,7 @@
   font-weight: 300;
   font-size: 15px;
   box-sizing: content-box;
+  background-color: #F3F3FF;
 }
 
 .search {
@@ -33,7 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0
+  padding: 0;
+  text-decoration: none;
 }
 
 .plus {
