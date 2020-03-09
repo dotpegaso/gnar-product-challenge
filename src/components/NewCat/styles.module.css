@@ -1,0 +1,14 @@
+.form {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.subtitle {
+  margin-bottom: 8px;
+  font-style: italic;
+  font-size: 20px;
+}

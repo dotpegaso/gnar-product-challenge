@@ -1,7 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react'
-
-// import { Container } from './styles';
+// import style from './styles.module.css'
 
 class Details extends Component {
   render() {

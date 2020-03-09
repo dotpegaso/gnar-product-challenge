@@ -3,8 +3,10 @@ export default {
   MAGNIFYING: require('../assets/icons/magnifying.svg'),
   PLUS: require('../assets/icons/plus.svg'),
   CARROT: require('../assets/icons/carrot.svg'),
+  ADD: require('../assets/icons/add.svg'),
 
   // images
   LOGO: require('../assets/images/logo.svg'),
+  CATBASKET: require('../assets/images/catbasket.svg'),
   CAT: require('../assets/images/cat.png'),
 }

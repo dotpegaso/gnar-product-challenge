@@ -19,7 +19,7 @@ const Routes = () => (
         <Switch>
           <Route path="/" component={List} restricted exact />
           <Route path="/add" component={Add} exact />
-          <Route path="/details:id" component={Details} exact />
+          <Route path="/details/:id" component={Details} exact />
         </Switch>
       </ConnectedRouter>
     </PersistGate>

@@ -1,0 +1,22 @@
+.card {
+  width: 49%;
+  height: 92vh;
+  background: linear-gradient(35deg, #FAFAFF 10%, rgba(255, 255, 255, 0) 1045%);;
+  border-radius: 5px;
+}
+
+.card:first-child {
+  width: calc(49% - 80px);
+  padding: 0 40px;
+  background: #9190fc;
+  background-image: url('../../assets/images/catbasket.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;  
+}
+
+.disclaimer {
+  color: #FFF;
+  font-size: 5.2vw;
+  margin: 20px 0 0;
+}
