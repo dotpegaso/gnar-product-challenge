@@ -1,11 +1,18 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
+import React from 'react'
 // import style from './styles.module.css'
+import Container from '../../components/Container'
+import Header from '../../components/Header'
 
-class Details extends Component {
-  render() {
-    return <h1>Add Details</h1>
-  }
+function Details() {
+  return (
+    <>
+      <Header />
+
+      <Container>
+        todo
+      </Container>
+    </>
+  )
 }
 
 export default Details

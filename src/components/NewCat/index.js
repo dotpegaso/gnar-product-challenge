@@ -1,7 +1,9 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react'
+import Swal from 'sweetalert2'
 import { connect } from 'react-redux' 
 import Input from '../Input'
+import { handleNewCat } from '../../utils/helpers'
 import style from './styles.module.css'
 import IMAGES from '../../constants/images'
 
@@ -20,10 +22,31 @@ class NewCat extends Component {
       const { ...state } = this.state
       const { addNewCat, cats } = this.props
 
-      state.id = cats.length
-      cats.push(state)
+      try {
+        handleNewCat().then(data => {
+          state.id = data[0].id
+          state.photo = data[0].url
+          cats.push(state)
 
-      addNewCat({ cats })
+          addNewCat({ cats })
+        })        
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.warn('handleNewCat err', error)
+
+        Swal.fire({
+          icon: 'error',
+          title: 'Unfurrrtunately',
+          text: 'Something went wrong',
+          showConfirmButton: false,
+          timer: 4000,
+          timerProgressBar: true,
+          footer: `Refreshing the page, try it again`,
+          onClose: () => {
+            window.location = '/add'
+          }
+        })
+      }
     }
 
     return (

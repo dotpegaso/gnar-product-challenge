@@ -12,7 +12,7 @@ export function handleSearch(searchString, array) {
 }
 
 // eslint-disable-next-line consistent-return
-export async function handleCatPhotos(limit) {
+export async function handleNewCat(limit) {
   try {
     const response = await fetch(`https://api.thecatapi.com/v1/images/search?limit=${limit || 1}`, {
       method: 'GET',

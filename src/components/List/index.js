@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { handleSearch, handleCatPhotos } from '../../utils/helpers'
+import { handleSearch } from '../../utils/helpers'
 import style from './styles.module.css'
 import IMAGES from '../../constants/images'
 
@@ -12,26 +12,19 @@ function EmptyPlaceholder() {
 }
 
 function List(props) {
-  const [catPhotos, setCatPhotos] = useState([])
 
   const { searchString, cats } = props
   const catList = handleSearch(searchString, cats)
-
-  if(catPhotos.length === 0){
-    handleCatPhotos(catList.length).then(data => {
-      setCatPhotos(data.map(item => item.url))
-    })
-  }
 
   return (
     <section className={style.list}>
       <h1 className={style.title}>CAT LIST</h1>
       <ul className={style.content}>
-        { catList.length === 0 ? <EmptyPlaceholder /> : catList.map((cat, index) => (
+        { catList.length === 0 ? <EmptyPlaceholder /> : catList.map(cat => (
           <li key={cat.id}>
             <Link to={`/details/${cat.id}`} className={style.item}>
               <div className={style.catBasicInfo}>
-                <img className={style.catPhoto} src={catPhotos[index] || IMAGES.ICON} alt="Cat" />
+                <img className={style.catPhoto} src={cat.photo || IMAGES.ICON} alt="Cat" />
                 <span className={style.catName}>{cat.name}</span>
               </div>
               <span className={style.catProperties}>

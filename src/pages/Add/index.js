@@ -11,7 +11,9 @@ function Add() {
 
       <Container>
         <div className={style.card}>
-          <h1 className={style.disclaimer}>Help Make a Purrrfect Match.</h1>
+          <h1 className={style.disclaimer}>
+            Help Make a Purrrfect Match.
+          </h1>
         </div>
         <div className={style.card}>
           <NewCat />
