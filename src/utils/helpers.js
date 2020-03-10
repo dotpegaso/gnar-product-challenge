@@ -19,7 +19,7 @@ export async function handleCatPhotos(limit) {
       method: 'GET',
       headers: {
         'Content-Type': 'text/plain',
-        'x-api-key': 'bfc37c2b-fdfa-4644-bc60-22993d2f06c1',
+        'x-api-key': process.env.REACT_APP_CAT_API_KEY,
       }
     })
     return await response.json()
