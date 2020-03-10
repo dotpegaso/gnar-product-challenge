@@ -10,6 +10,11 @@
   padding: 0
 }
 
+.actions {
+  display: flex;
+  margin-left: auto;
+}
+
 .search, .action {
   min-width: 22vw;
   min-height: 45px;
@@ -19,7 +24,6 @@
   font-size: 15px;
   box-sizing: content-box;
   background-color: #F3F3FF;
-  margin-left: auto;
 }
 
 .search {

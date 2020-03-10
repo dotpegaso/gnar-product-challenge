@@ -10,7 +10,7 @@ function Home() {
       <Header 
         action="add" 
         actionTitle="ADD NEW CAT" 
-        // searchCallback={handleSearch}
+        searchable
       />
       <Container>
         <Feed />

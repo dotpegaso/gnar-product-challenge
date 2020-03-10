@@ -1,9 +1,9 @@
 // import React from 'react'
 import { put, takeEvery } from 'redux-saga/effects'
 
-function* add({ payload }) {
+function* addNewCat({ payload }) {
   try {
-    yield put({ type: 'ADD_INSERT_DATA', data: { ...payload } })
+    yield put({ type: 'UPDATE_CAT_LIST', data: { ...payload } })
   } catch ({ message, response }) {
     // eslint-disable-next-line no-console
     console.warn('add generator ERROR', { message, response })
@@ -11,5 +11,5 @@ function* add({ payload }) {
 }
 
 export default function* loginSagas() {
-  yield takeEvery('ADD', add)
+  yield takeEvery('ADD_NEW_CAT', addNewCat)
 }

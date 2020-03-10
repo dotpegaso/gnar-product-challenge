@@ -6,7 +6,8 @@ import createSagaMiddleware from 'redux-saga'
 import storage from 'redux-persist/lib/storage'
 
 // sagas
-import add from './reducers/sagas/add'
+import header from './reducers/sagas/header'
+import list from './reducers/sagas/list'
 
 // all reducers
 import * as reducers from './reducers/_index'
@@ -34,6 +35,7 @@ const store = createStore(
 const persistor = persistStore(store)
 
 // Run sagas
-SagaMiddleware.run(add)
+SagaMiddleware.run(header)
+SagaMiddleware.run(list)
 
 export { store, persistor, history }

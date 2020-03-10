@@ -50,12 +50,16 @@
 
 .list .content .item .catBasicInfo {
   display: flex;
+  flex: 2;
   align-items: center;
 }
 
 .list .content .item .catPhoto {
   border-radius: 5px;
   margin-left: 5px;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
 }
 
 .list .content .item .catName {
@@ -66,8 +70,9 @@
 
 .list .content .item .catProperties {
   font-size: 13px;
+  flex: 1;
 }
 
-.list .content .item .catProperties:last-child {
-  margin-right: 100px;
+.list .content .item .catProperties:first-of-type {
+  flex: .8;
 }

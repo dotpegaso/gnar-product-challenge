@@ -8,5 +8,5 @@ export default {
   // images
   LOGO: require('../assets/images/logo.svg'),
   CATBASKET: require('../assets/images/catbasket.svg'),
-  CAT: require('../assets/images/cat.png'),
+  ICON: require('../assets/images/icon.svg'),
 }
