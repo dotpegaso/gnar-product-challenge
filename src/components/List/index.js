@@ -5,6 +5,12 @@ import { handleSearch, handleCatPhotos } from '../../utils/helpers'
 import style from './styles.module.css'
 import IMAGES from '../../constants/images'
 
+function EmptyPlaceholder() {
+  return (
+    <img className={style.emptyList} src={IMAGES.PURRRHAPS} alt="Empty list" />
+  )
+}
+
 function List(props) {
   const [catPhotos, setCatPhotos] = useState([])
 
@@ -15,13 +21,13 @@ function List(props) {
     handleCatPhotos(catList.length).then(data => {
       setCatPhotos(data.map(item => item.url))
     })
-  }    
-  
+  }
+
   return (
     <section className={style.list}>
       <h1 className={style.title}>CAT LIST</h1>
       <ul className={style.content}>
-        { catList && catList.map((cat, index) => (
+        { catList.length === 0 ? <EmptyPlaceholder /> : catList.map((cat, index) => (
           <li key={cat.id}>
             <Link to={`/details/${cat.id}`} className={style.item}>
               <div className={style.catBasicInfo}>

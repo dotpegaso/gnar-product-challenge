@@ -10,7 +10,9 @@ export default function Input(props) {
       <input 
         type={props.type || 'text'}
         className={style.input}
-        onChange={props.onChangeCallback}
+        onChange={props.onChange}
+        required={props.required}
+        name={props.name}
       />
     </div>
   )

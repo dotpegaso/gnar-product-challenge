@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+.action:hover{
+  background: #e8e8e8;
+}
+
 .plus {
   margin-right: 10px
 }

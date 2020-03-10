@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export function handleSearch(searchString, array) {
     const filteredData = array.map( 
       catObj => Object.values(catObj).filter( 

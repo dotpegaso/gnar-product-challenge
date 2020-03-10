@@ -76,3 +76,12 @@
 .list .content .item .catProperties:first-of-type {
   flex: .8;
 }
+
+
+.emptyList {
+  height: 35vh;
+  margin: 15% auto;
+  display: block;
+  opacity: .2;
+  pointer-events: none;
+}

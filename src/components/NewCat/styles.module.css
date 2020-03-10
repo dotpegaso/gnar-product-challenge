@@ -12,3 +12,29 @@
   font-style: italic;
   font-size: 20px;
 }
+
+.submit {
+  background: linear-gradient(12deg, #7372F2 30%, rgba(115, 114, 242, 0) 340%);
+  border-radius: 5px;
+  height: 45px;
+  border: none;
+  padding: 0 33%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #FFF;
+  margin: 45px auto 0;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: linear-gradient(12deg, #7372F2 20%, rgba(115, 114, 242, 0) 240%);
+}
+
+.submit[disabled] {
+  opacity: .6;
+}
+
+.submit img {
+  margin-left: 10px;
+}
