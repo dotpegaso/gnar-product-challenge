@@ -3,3 +3,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.container[wrap] {
+  flex-wrap: wrap;
+  background-color: red;
+}

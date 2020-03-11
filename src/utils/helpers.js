@@ -1,11 +1,11 @@
 export function handleSearch(searchString, array) {
     const filteredData = array.map( 
-      catObj => Object.values(catObj).filter( 
+      obj => Object.values(obj).filter( 
         objValue => 
           objValue.toString().toLowerCase().includes(
             searchString.toString().toLowerCase()
           ) )
-      .length > 0 && catObj )
+      .length > 0 && obj )
     .filter(Boolean)
 
   return filteredData

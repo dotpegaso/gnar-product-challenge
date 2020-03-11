@@ -6,10 +6,6 @@ import IMAGES from '../../constants/images'
 
 function Header(props) {
 
-  const toHomescreen = () => {
-    window.location = '/'
-  }
-
   const handleChange = ev => {
     const { value: searchString } = ev.target
     props.updateSearchString({ searchString })
@@ -17,9 +13,9 @@ function Header(props) {
 
   return (
     <header className={style.header}>
-      <button type="button" onClick={toHomescreen} className={style.btnLogo}>
+      <Link to="/" className={style.btnLogo}>
         <img src={IMAGES.LOGO} alt="Purrrfect Logo" />
-      </button>
+      </Link>
       
       <div className={style.actions}>
         <>
@@ -44,15 +40,10 @@ function Header(props) {
   )
 }
 
-const mapStateToProps = state => ({
-  state,
-  header: state.header,
-})
-
 const mapDispatchToProps = dispatch => ({
   updateSearchString(payload) {
     dispatch({ type: 'UPDATE_SEARCH_STRING', payload })
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default connect(null, mapDispatchToProps)(Header)
