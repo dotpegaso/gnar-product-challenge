@@ -31,11 +31,11 @@ function CatDetails(props) {
               <b>Age: </b>
               {`${currentCat.age} years`}
             </span>
-            <span className={style.catProperties}>
+            <span className={style.catProperties} title={currentCat.activity}>
               <b>Favorite activity: </b> 
               {currentCat.activity}
             </span>
-            <span className={style.catProperties}>
+            <span className={style.catProperties} title={currentCat.activity}>
               <b>Pet peave: </b> 
               {currentCat.peave}
             </span>

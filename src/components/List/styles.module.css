@@ -58,10 +58,17 @@
   object-fit: cover;
 }
 
+.list .content .item .catProperties {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .list .content .item .catName {
   font-size: 20px;
   margin-left: 25px;
   font-style: italic;
+  max-width: 60%;
 }
 
 .list .content .item .catProperties {

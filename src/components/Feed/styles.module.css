@@ -3,7 +3,7 @@
   min-width: 320px;
   height: 100%;
   max-height: 100vh;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .aside .title {
@@ -15,6 +15,17 @@
   border-top: 1px solid var(--default-border);
   padding: 0 40px;
   list-style: none;
+  overflow-y: auto;
+  height: 100%;
+  max-height: calc(100vh - 90px);
+}
+
+.aside .content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.aside .content::-webkit-scrollbar-thumb {
+  background: var(--input-border);
 }
 
 .aside .content .item {
@@ -29,7 +40,7 @@
 .aside .content .item .link {
   display: block;
   padding: 22px 0;
-  font-size: 15px;
+  font-size: 1.07vw;
   text-decoration: none;
   color: var(--default-text);
 }

@@ -31,11 +31,11 @@ function List(props) {
                 <b>Age: </b> 
                 {`${cat.age} years`}
               </span>
-              <span className={style.catProperties}>
+              <span className={style.catProperties} title={cat.activity}>
                 <b>Favorite activity: </b> 
                 {cat.activity}
               </span>
-              <span className={style.catProperties}>
+              <span className={style.catProperties} title={cat.peave}>
                 <b>Pet peave: </b> 
                 {cat.peave}
               </span>

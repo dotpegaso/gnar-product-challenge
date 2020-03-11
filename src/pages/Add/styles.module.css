@@ -1,6 +1,6 @@
 .card {
   width: 49%;
-  height: 92vh;
+  height: 100vh;
   background: linear-gradient(35deg, var(--clear-background) 10%, rgba(255, 255, 255, 0) 1045%);;
   border-radius: 5px;
 }
