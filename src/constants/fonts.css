@@ -4,7 +4,8 @@
     url('../assets/fonts/brown-regular.svg') format('svg'),
     url('../assets/fonts/brown-regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: norma;
+  font-display: swap;
 }
 
 /* Bennet display substitute */
@@ -13,7 +14,8 @@
   src:
     url('../assets/fonts/frank-ruh-regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;  
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
