@@ -10,10 +10,10 @@
 }
 
 .container { 
-  width: calc(65% - 95px);
-  background: #FAFAFA;
+  width: calc(65% - 100px);
+  background: var(--clear-background);
   border-radius: 5px;
-  padding: 15px 45px;
+  padding: 15px 50px;
   font-size: 13px;
 }
 
@@ -32,7 +32,7 @@
 
 .title {
   font-size: 30px;
-  margin: 0;
+  margin: 10px 0 0 0;
   text-transform: uppercase;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .details {
-  margin: 30px 0 40px;
+  margin: 30px 0;
   display: flex;
 }
 
@@ -103,6 +103,7 @@
 
 .computedDetails {
   display: flex;
+  margin-top: 30px;
 }
 
 .computedDetails .personality,
@@ -112,7 +113,7 @@
 
 .computedDetails .personality .fillBar {
   height: 20px;
-  background: #B4D9FF;
+  background: var(--fillbar);
   border-radius: 20px;
   margin: 5px 0;
   width: 85%;
@@ -120,7 +121,7 @@
 
 .computedDetails .personality .fillBar .gauge {
   height: 100%;
-  background: #5D5BF5;
+  background: var(--gauge);
   border-radius: 20px;
   animation: fill 1s ease-in-out forwards;
 }
@@ -160,19 +161,19 @@
 }
 
 .computedDetails .average .box:first-of-type ul li:nth-child(1) .legend {
-  background: #5452F6;
+  background: var(--first-legend);
 }
 
 .computedDetails .average .box:first-of-type ul li:nth-child(2) .legend {
-  background: #00A3FF;
+  background: var(--second-legend);
 }
 
 .computedDetails .average .box:first-of-type ul li:nth-child(3) .legend {
-  background: #B4D9FF;
+  background: var(--third-legend);
 }
 
 .computedDetails .average .box:first-of-type ul li:nth-child(4) .legend {
-  background: #3876F3;
+  background: var(--fourth-legend);
 }
 
 @keyframes fill {

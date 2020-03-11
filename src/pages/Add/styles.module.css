@@ -1,7 +1,7 @@
 .card {
   width: 49%;
   height: 92vh;
-  background: linear-gradient(35deg, #FAFAFF 10%, rgba(255, 255, 255, 0) 1045%);;
+  background: linear-gradient(35deg, var(--clear-background) 10%, rgba(255, 255, 255, 0) 1045%);;
   border-radius: 5px;
 }
 
@@ -17,8 +17,9 @@
 
 .disclaimer {
   color: #FFF;
-  font-size: 5.2vw;
+  font-size: 5.5vw;
   margin: 20px 0 0;
+  font-family: var(--secondary-font);
 }
 
 @media screen and (max-width: 490px) {

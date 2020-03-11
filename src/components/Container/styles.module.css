@@ -6,7 +6,6 @@
 
 .container[wrap] {
   flex-wrap: wrap;
-  background-color: red;
 }
 
 @media screen and (max-width: 490px) {

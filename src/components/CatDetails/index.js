@@ -107,7 +107,7 @@ function CatDetails(props) {
               <div className={style.box}>
                 <ResponsiveContainer width={200} height="90%">
                   <PieChart>
-                    <Pie dataKey="value" data={chartData} cx="50%" cy="55%" outerRadius={60}>
+                    <Pie dataKey="value" data={chartData} cx="50%" cy="55%" outerRadius={55}>
                       {
                         chartData.map((entry, index) => (
                           <Cell key={entry.value} fill={chartColors[index]} />

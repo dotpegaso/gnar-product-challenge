@@ -1,5 +1,5 @@
 .aside {
-  background: linear-gradient(35deg, #FAFAFF 10%, rgba(255, 255, 255, 0) 1045%);
+  background: linear-gradient(35deg, var(--clear-background) 10%, rgba(255, 255, 255, 0) 1045%);
   min-width: 320px;
   height: 100%;
   max-height: 100vh;
@@ -7,19 +7,19 @@
 }
 
 .aside .title {
-  padding: 5px 35px 5px;
+  padding: 10px 35px 0;
   font-size: 20px;
 }
 
 .aside .content {
-  border-top: 1px solid #D0DAE8;
+  border-top: 1px solid var(--default-border);
   padding: 0 40px;
   list-style: none;
 }
 
 .aside .content .item {
   background: url('../../assets/icons/carrot.svg') no-repeat center right;
-  border-bottom: 1px solid #D0DAE8;
+  border-bottom: 1px solid var(--default-border);
   padding: 0;
   font-style: italic;
   cursor: pointer;
@@ -28,9 +28,14 @@
 
 .aside .content .item .link {
   display: block;
-  padding: 20px 0;
+  padding: 22px 0;
+  font-size: 15px;
   text-decoration: none;
-  color: #111;
+  color: var(--default-text);
+}
+
+.aside .content .item:first-of-type .link {
+  margin-top: 5px;
 }
 
 .aside .content .item:hover {

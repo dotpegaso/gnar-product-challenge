@@ -1,1 +1,21 @@
-@value default-border: #D0DAE8;
+:root {
+  --default-border: #D0DAE8;
+  --clear-background: #FAFAFF;
+  --actions-background: #F3F3FF;
+  --actions-background-hover: #e8e8e8;
+  --default-text: #111;
+  --input-border: #5452F6;
+
+  /* CatDetails legends & fillBars */
+  --first-legend: #5452F6;
+  --second-legend: #00A3FF;
+  --third-legend: #B4D9FF;
+  --fourth-legend: #3876F3;
+
+  --fillbar: #B4D9FF;
+  --gauge: #5D5BF5;
+
+  /* NewCat */
+  --submit: linear-gradient(12deg, #7372F2 30%, rgba(115, 114, 242, 0) 340%);
+  --submit-hover: linear-gradient(12deg, #7372F2 20%, rgba(115, 114, 242, 0) 240%);
+}

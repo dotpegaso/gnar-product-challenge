@@ -8,12 +8,12 @@
 }
 
 .input {
-  border: 2px solid #5452F6;
+  border: 2px solid var(--input-border);
   font-size: 16px;
   padding: 2.5px 10px;
   background: transparent;
   width: calc(100% - 20px);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .input[type="file"] {

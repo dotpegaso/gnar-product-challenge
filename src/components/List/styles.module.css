@@ -1,21 +1,17 @@
 .list {
   border-radius: 5px;
   width: calc(100% - 345px);
-  background: linear-gradient(13deg, #FAFAFF 12%, rgba(255, 255, 255, 0) 1045%);
-}
-
-.list .title {
-  padding: 5px 35px 5px;
+  background: linear-gradient(13deg, var(--clear-background) 12%, rgba(255, 255, 255, 0) 1045%);
 }
 
 .list .title {
   font-size: 30px;
-  line-height: 6px;
-  padding: 0 45px;
+  margin: 10px 0;
+  padding: 10px 45px 0;
 }
 
 .list .content {
-  border-top: 1px solid #D0DAE8;
+  border-top: 1px solid var(--default-border);
   padding: 0 40px;
   list-style: none;
 }
@@ -30,7 +26,7 @@
 }
 
 .list .content::-webkit-scrollbar-thumb {
-  background: #5452F6;
+  background: var(--input-border);
 }
 
 .list .content .item {
@@ -38,13 +34,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #D0DAE8;
+  border-bottom: 1px solid var(--default-border);
   text-decoration: none;
   color: #111;
 }
 
 .list .content .item:hover {
-  background: #e8e8e8;
+  background: var(--actions-background-hover);
   cursor: pointer;
 }
 

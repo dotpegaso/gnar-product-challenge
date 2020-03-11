@@ -25,7 +25,7 @@ function List(props) {
             <Link to={`/details/${cat.id}`} className={style.item}>
               <div className={style.catBasicInfo}>
                 <img className={style.catPhoto} src={cat.photo || IMAGES.ICON} alt="Cat" />
-                <span className={style.catName}>{cat.name}</span>
+                <b className={style.catName}>{cat.name}</b>
               </div>
               <span className={style.catProperties}>
                 <b>Age: </b> 
