@@ -38,3 +38,9 @@
 .submit img {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 490px) {
+  .form {
+    width: 80%;
+  }
+}

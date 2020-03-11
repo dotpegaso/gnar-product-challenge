@@ -20,17 +20,37 @@
 .aside .content .item {
   background: url('../../assets/icons/carrot.svg') no-repeat center right;
   border-bottom: 1px solid #D0DAE8;
-  padding: 20px 0;
+  padding: 0;
   font-style: italic;
   cursor: pointer;
   transition-duration: .2s;
 }
 
 .aside .content .item .link {
+  display: block;
+  padding: 20px 0;
   text-decoration: none;
   color: #111;
 }
 
 .aside .content .item:hover {
   font-weight: bold;
+}
+
+@media screen and (max-width: 490px) {
+  .aside {
+    width: calc(100% - 40px);
+    margin-top: 30px;
+    height: 100%;
+    max-height: 100%;
+    padding: 20px;
+  }
+
+  .aside .title {
+    text-align: center;
+  }
+
+  .aside .content {
+    padding: 0;
+  }
 }

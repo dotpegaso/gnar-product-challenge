@@ -3,7 +3,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts'
 import { useParams, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import style from './styles.module.css'
-import { energetic, friendly, curious, chartData, chartColors } from './_mock'
+import { chartData, chartColors } from './_mock'
 
 function CatDetails(props) {
   const { cats } = props
@@ -70,15 +70,15 @@ function CatDetails(props) {
               <h2 className={style.subtitle}>Personality</h2>
               <b>Curious</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${curious}%`}} />
+                <div className={style.gauge} style={{ width: `${currentCat.curious}%`}} />
               </div>
               <b>Friendly</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${friendly}%`}} />
+                <div className={style.gauge} style={{ width: `${currentCat.friendly}%`}} />
               </div>
               <b>Energetic</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${energetic}%`}} />
+                <div className={style.gauge} style={{ width: `${currentCat.energetic}%`}} />
               </div>
             </div>
             

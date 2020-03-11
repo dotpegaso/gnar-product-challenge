@@ -8,3 +8,12 @@
   flex-wrap: wrap;
   background-color: red;
 }
+
+@media screen and (max-width: 490px) {
+  .container {
+    flex-wrap: wrap;
+    width: 100%;
+    flex-flow: column-reverse;
+    padding: 10px 0;
+  }
+}

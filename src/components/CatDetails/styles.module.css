@@ -59,6 +59,7 @@
 .details .location {
   flex: 1;
 }
+
 .details .location b, 
 .details .location span {
   display: block;
@@ -161,12 +162,15 @@
 .computedDetails .average .box:first-of-type ul li:nth-child(1) .legend {
   background: #5452F6;
 }
+
 .computedDetails .average .box:first-of-type ul li:nth-child(2) .legend {
   background: #00A3FF;
 }
+
 .computedDetails .average .box:first-of-type ul li:nth-child(3) .legend {
   background: #B4D9FF;
 }
+
 .computedDetails .average .box:first-of-type ul li:nth-child(4) .legend {
   background: #3876F3;
 }
@@ -174,4 +178,86 @@
 @keyframes fill {
   0% { width: 0; }
   100% {}
+}
+
+@media screen and (max-width: 490px) {
+  .detailsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .detailsContainer .block {
+    flex-wrap: wrap;
+  }
+
+  .detailsContainer .preview {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .container .title {
+    text-align: center;
+  }
+
+  .about { 
+    flex-wrap: wrap;
+  }
+
+  .about .catProperties {
+    flex: auto;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .details {
+    flex-wrap: wrap;
+  }
+
+  .details .location { 
+    flex: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .details .bio {
+    flex: auto;
+    width: 100%;
+  }
+
+  .medical { 
+    width: 100%;
+  }
+
+  .computedDetails {
+    flex-wrap: wrap;
+  }
+
+  .computedDetails .personality {
+    flex: auto;
+    width: 100%;
+  }
+
+  .computedDetails .personality .fillBar {
+    width: 100%;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer .gallery .nextPreview{
+    width: 30vw;
+    height: 30vw;
+    margin: 0;
+  }
+
 }

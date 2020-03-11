@@ -20,7 +20,7 @@ function List(props) {
     <section className={style.list}>
       <h1 className={style.title}>CAT LIST</h1>
       <ul className={style.content}>
-        { catList.length === 0 ? <EmptyPlaceholder /> : catList.map(cat => (
+        { catList.length === 0 ? <EmptyPlaceholder /> : catList.reverse().map(cat => (
           <li key={cat.id}>
             <Link to={`/details/${cat.id}`} className={style.item}>
               <div className={style.catBasicInfo}>
