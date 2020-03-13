@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px)
+  }
+  100%{
+    opacity: 1;
+    transform: unset;
+  }
+}
+
 .card {
   width: 49%;
   height: 100vh;
@@ -15,11 +26,19 @@
   background-blend-mode: multiply;  
 }
 
+.card:last-child {
+  opacity: 0;
+  animation: fadeIn .2s .1s ease-in-out forwards;
+}
+
 .disclaimer {
   color: #FFF;
   font-size: 5.5vw;
   margin: 20px 0 0;
   font-family: var(--secondary-font);
+
+  opacity: 0;
+  animation: fadeIn .2s ease-in-out forwards;
 }
 
 @media screen and (max-width: 490px) {

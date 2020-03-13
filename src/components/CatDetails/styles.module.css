@@ -1,3 +1,25 @@
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px)
+  }
+  100%{
+    opacity: 1;
+    transform: unset;
+  }
+}
+
+@keyframes showsUp {
+  0%{
+    opacity: 0;
+    height: 0;
+  }
+  100%{
+    opacity: .7;
+    height: 30%;
+  }
+}
+
 .detailsContainer {
   width: 100%;
   display: flex;
@@ -15,12 +37,16 @@
   border-radius: 5px;
   padding: 15px 50px;
   font-size: 13px;
+  opacity: 0;
+  animation: fadeIn .2s .1s ease-in-out forwards;
 }
 
 .preview {
   width: 44vw;
   height: 67.5vh;
   margin-right: 20px;
+  opacity: 0;
+  animation: fadeIn .2s ease-in-out forwards;
 }
 
 .preview img {
@@ -84,6 +110,8 @@
 
 .footer {
   width: 100%;
+  opacity: 0;
+  animation: fadeIn .2s .2s ease-in-out forwards;
 }
 
 .footer .title {
@@ -96,6 +124,10 @@
   justify-content: flex-start;
 }
 
+.footer .catLink {
+  position: relative;
+}
+
 .footer .gallery .nextPreview {
   height: 14.7vw;
   width: 14.7vw;
@@ -103,6 +135,27 @@
   border-radius: 5px;
   display: block;
   margin-right: 15px;
+}
+
+.footer .nextPreviewName {
+  position: absolute;
+  background: #000;
+  width: calc(100% - 55px);
+  padding: 20px;
+  bottom: 0;
+  color: #FFF;
+  font-size: 2vw;
+  opacity: .6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: .2s all;
+  opacity: 0;
+  height: 0;
+  text-transform: capitalize;
+}
+
+.footer .catLink:hover .nextPreviewName {
+  animation: showsUp .2s ease-in-out forwards;
 }
 
 .computedDetails {
@@ -206,6 +259,8 @@
     width: calc(100% - 40px);
     padding: 20px;
     margin-top: 20px;
+    opacity: 1;
+    animation: none;
   }
 
   .container .title {
@@ -263,6 +318,12 @@
     width: 100%;
     margin: 10px 0;
     height: 30vw;
+  }
+
+  .footer .nextPreviewName {
+    font-size: 6vw;
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
   }
 
 }

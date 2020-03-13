@@ -1,4 +1,17 @@
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px)
+  }
+  100%{
+    opacity: 1;
+    transform: unset;
+  }
+}
+
 .aside {
+  opacity: 0;
+  animation: fadeIn .2s ease-in-out forwards;
   background: linear-gradient(35deg, var(--clear-background) 10%, rgba(255, 255, 255, 0) 1045%);
   min-width: 320px;
   height: 100%;

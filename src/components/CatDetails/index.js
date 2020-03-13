@@ -127,8 +127,11 @@ function CatDetails(props) {
 
         <div className={style.gallery}>
           { footerCats.map(cat => cat && (
-            <Link key={cat.id} to={`/details/${cat.id}`}>
+            <Link key={cat.id} to={`/details/${cat.id}`} className={style.catLink}>
               <img src={cat.photo} className={style.nextPreview} alt="Next cat preview" />
+              <span className={style.nextPreviewName}>
+                {cat.name}
+              </span>
             </Link>
           )) }          
         </div>
