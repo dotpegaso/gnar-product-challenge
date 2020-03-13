@@ -260,9 +260,9 @@
   }
 
   .footer .gallery .nextPreview{
-    width: 30vw;
+    width: 100%;
+    margin: 10px 0;
     height: 30vw;
-    margin: 0;
   }
 
 }

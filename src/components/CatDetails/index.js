@@ -105,7 +105,7 @@ function CatDetails(props) {
                 </ul>
               </div>
               <div className={style.box}>
-                <ResponsiveContainer width={200} height="90%">
+                <ResponsiveContainer width={150} height="90%">
                   <PieChart>
                     <Pie dataKey="value" data={chartData} cx="50%" cy="55%" outerRadius={55}>
                       {
