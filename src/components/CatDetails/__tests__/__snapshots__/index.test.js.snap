@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot of CatDetails 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="detailsContainer"
+      >
+        <div
+          class="block"
+        >
+          <section
+            class="preview"
+          >
+            <img
+              alt="Cat preview"
+              src="https://cdn2.thecatapi.com/images/dkp.gif"
+            />
+          </section>
+          <section
+            class="container"
+          >
+            <h1
+              class="title"
+            >
+              Fluffy Jenkins
+            </h1>
+            <h2
+              class="subtitle"
+            >
+              About
+            </h2>
+            <div
+              class="about"
+            >
+              <span
+                class="catProperties"
+              >
+                <b>
+                  Age: 
+                </b>
+                3 years
+              </span>
+              <span
+                class="catProperties"
+                title="Eating"
+              >
+                <b>
+                  Favorite activity: 
+                </b>
+                Eating
+              </span>
+              <span
+                class="catProperties"
+                title="Eating"
+              >
+                <b>
+                  Pet peave: 
+                </b>
+                Water
+              </span>
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="location"
+              >
+                <b>
+                  Location
+                </b>
+                <b>
+                  SPCA Orange County
+                </b>
+                <span>
+                  21632 Newland St, Huntington Beach, CA 92646
+                </span>
+              </div>
+              <div
+                class="bio"
+              >
+                <b>
+                  Bio: 
+                </b>
+                Fluffy is a spunky cat who likes to know what is going on at all times. He is curious, smart, and personable. He loves to meow, hunt, eat, and sleep. Catzilla also does not get along with other cats, but he likes dogs. Catzilla is in need of a loving, lasting home.
+              </div>
+            </div>
+            <a
+              class="medical"
+              href="https://bit.ly/39BrzIB"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <b>
+                View medical record
+              </b>
+            </a>
+            <div
+              class="computedDetails"
+            >
+              <div
+                class="personality"
+              >
+                <h2
+                  class="subtitle"
+                >
+                  Personality
+                </h2>
+                <b>
+                  Curious
+                </b>
+                <div
+                  class="fillBar"
+                >
+                  <div
+                    class="gauge"
+                    data-testid="curious-gauge"
+                    style="width: 10%;"
+                  />
+                </div>
+                <b>
+                  Friendly
+                </b>
+                <div
+                  class="fillBar"
+                >
+                  <div
+                    class="gauge"
+                    data-testid="friendly-gauge"
+                    style="width: 10%;"
+                  />
+                </div>
+                <b>
+                  Energetic
+                </b>
+                <div
+                  class="fillBar"
+                >
+                  <div
+                    class="gauge"
+                    data-testid="energetic-gauge"
+                    style="width: 10%;"
+                  />
+                </div>
+              </div>
+              <div
+                class="average"
+              >
+                <h2
+                  class="subtitle"
+                >
+                  Average day
+                </h2>
+                <div
+                  class="box"
+                >
+                  <ul>
+                    <li>
+                      <span
+                        class="legend"
+                      />
+                      <b>
+                        Meowing: 25%
+                      </b>
+                    </li>
+                    <li>
+                      <span
+                        class="legend"
+                      />
+                      <b>
+                        Hunting: 7%
+                      </b>
+                    </li>
+                    <li>
+                      <span
+                        class="legend"
+                      />
+                      <b>
+                        Sleeping: 55%
+                      </b>
+                    </li>
+                    <li>
+                      <span
+                        class="legend"
+                      />
+                      <b>
+                        Eating: 13%
+                      </b>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="box"
+                >
+                  <div
+                    class="recharts-responsive-container"
+                    id="undefined"
+                    style="width: 150px; height: 90%;"
+                  >
+                    <div />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer
+          class="footer"
+        >
+          <h1
+            class="title"
+          >
+            SEE MORE CATS
+          </h1>
+          <div
+            class="gallery"
+            data-testid="gallery"
+          >
+            <a
+              class="catLink"
+              href="/details/asv"
+            >
+              <img
+                alt="Next cat preview"
+                class="nextPreview"
+                src="https://cdn2.thecatapi.com/images/asv.jpg"
+              />
+              <span
+                class="nextPreviewName"
+              >
+                Floffy Wenkins
+              </span>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="detailsContainer"
+    >
+      <div
+        class="block"
+      >
+        <section
+          class="preview"
+        >
+          <img
+            alt="Cat preview"
+            src="https://cdn2.thecatapi.com/images/dkp.gif"
+          />
+        </section>
+        <section
+          class="container"
+        >
+          <h1
+            class="title"
+          >
+            Fluffy Jenkins
+          </h1>
+          <h2
+            class="subtitle"
+          >
+            About
+          </h2>
+          <div
+            class="about"
+          >
+            <span
+              class="catProperties"
+            >
+              <b>
+                Age: 
+              </b>
+              3 years
+            </span>
+            <span
+              class="catProperties"
+              title="Eating"
+            >
+              <b>
+                Favorite activity: 
+              </b>
+              Eating
+            </span>
+            <span
+              class="catProperties"
+              title="Eating"
+            >
+              <b>
+                Pet peave: 
+              </b>
+              Water
+            </span>
+          </div>
+          <div
+            class="details"
+          >
+            <div
+              class="location"
+            >
+              <b>
+                Location
+              </b>
+              <b>
+                SPCA Orange County
+              </b>
+              <span>
+                21632 Newland St, Huntington Beach, CA 92646
+              </span>
+            </div>
+            <div
+              class="bio"
+            >
+              <b>
+                Bio: 
+              </b>
+              Fluffy is a spunky cat who likes to know what is going on at all times. He is curious, smart, and personable. He loves to meow, hunt, eat, and sleep. Catzilla also does not get along with other cats, but he likes dogs. Catzilla is in need of a loving, lasting home.
+            </div>
+          </div>
+          <a
+            class="medical"
+            href="https://bit.ly/39BrzIB"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>
+              View medical record
+            </b>
+          </a>
+          <div
+            class="computedDetails"
+          >
+            <div
+              class="personality"
+            >
+              <h2
+                class="subtitle"
+              >
+                Personality
+              </h2>
+              <b>
+                Curious
+              </b>
+              <div
+                class="fillBar"
+              >
+                <div
+                  class="gauge"
+                  data-testid="curious-gauge"
+                  style="width: 10%;"
+                />
+              </div>
+              <b>
+                Friendly
+              </b>
+              <div
+                class="fillBar"
+              >
+                <div
+                  class="gauge"
+                  data-testid="friendly-gauge"
+                  style="width: 10%;"
+                />
+              </div>
+              <b>
+                Energetic
+              </b>
+              <div
+                class="fillBar"
+              >
+                <div
+                  class="gauge"
+                  data-testid="energetic-gauge"
+                  style="width: 10%;"
+                />
+              </div>
+            </div>
+            <div
+              class="average"
+            >
+              <h2
+                class="subtitle"
+              >
+                Average day
+              </h2>
+              <div
+                class="box"
+              >
+                <ul>
+                  <li>
+                    <span
+                      class="legend"
+                    />
+                    <b>
+                      Meowing: 25%
+                    </b>
+                  </li>
+                  <li>
+                    <span
+                      class="legend"
+                    />
+                    <b>
+                      Hunting: 7%
+                    </b>
+                  </li>
+                  <li>
+                    <span
+                      class="legend"
+                    />
+                    <b>
+                      Sleeping: 55%
+                    </b>
+                  </li>
+                  <li>
+                    <span
+                      class="legend"
+                    />
+                    <b>
+                      Eating: 13%
+                    </b>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="box"
+              >
+                <div
+                  class="recharts-responsive-container"
+                  id="undefined"
+                  style="width: 150px; height: 90%;"
+                >
+                  <div />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer
+        class="footer"
+      >
+        <h1
+          class="title"
+        >
+          SEE MORE CATS
+        </h1>
+        <div
+          class="gallery"
+          data-testid="gallery"
+        >
+          <a
+            class="catLink"
+            href="/details/asv"
+          >
+            <img
+              alt="Next cat preview"
+              class="nextPreview"
+              src="https://cdn2.thecatapi.com/images/asv.jpg"
+            />
+            <span
+              class="nextPreviewName"
+            >
+              Floffy Wenkins
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

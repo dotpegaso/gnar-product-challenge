@@ -11,7 +11,7 @@ function EmptyPlaceholder() {
   )
 }
 
-function List(props) {
+export function List(props) {
 
   const { searchString, cats } = props
   const catList = handleSearch(searchString, cats)
@@ -19,7 +19,7 @@ function List(props) {
   return (
     <section className={style.list}>
       <h1 className={style.title}>CAT LIST</h1>
-      <ul className={style.content}>
+      <ul className={style.content} data-testid="cats">
         { catList.length === 0 ? <EmptyPlaceholder /> : catList.reverse().map(cat => (
           <li key={cat.id}>
             <Link to={`/details/${cat.id}`} className={style.item}>

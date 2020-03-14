@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import style from './styles.module.css'
 import { chartData, chartColors } from './_mock'
 
-function CatDetails(props) {
+export function CatDetails(props) {
   const { cats } = props
   const { id } = useParams() // get the :id param from route
 
@@ -70,15 +70,15 @@ function CatDetails(props) {
               <h2 className={style.subtitle}>Personality</h2>
               <b>Curious</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${currentCat.curious}%`}} />
+                <div data-testid="curious-gauge" className={style.gauge} style={{ width: `${currentCat.curious}%`}} />
               </div>
               <b>Friendly</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${currentCat.friendly}%`}} />
+                <div data-testid="friendly-gauge" className={style.gauge} style={{ width: `${currentCat.friendly}%`}} />
               </div>
               <b>Energetic</b>
               <div className={style.fillBar}>
-                <div className={style.gauge} style={{ width: `${currentCat.energetic}%`}} />
+                <div data-testid="energetic-gauge" className={style.gauge} style={{ width: `${currentCat.energetic}%`}} />
               </div>
             </div>
             
@@ -125,7 +125,7 @@ function CatDetails(props) {
       <footer className={style.footer}>
         <h1 className={style.title}>SEE MORE CATS</h1>
 
-        <div className={style.gallery}>
+        <div className={style.gallery} data-testid="gallery">
           { footerCats.map(cat => cat && (
             <Link key={cat.id} to={`/details/${cat.id}`} className={style.catLink}>
               <img src={cat.photo} className={style.nextPreview} alt="Next cat preview" />
